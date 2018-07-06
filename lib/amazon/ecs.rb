@@ -21,6 +21,10 @@
 # SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #++
 
+# added by ykominami@gmail.com
+#require "amazon/ecs/version"
+#
+
 require 'net/http'
 require 'nokogiri'
 require 'cgi'

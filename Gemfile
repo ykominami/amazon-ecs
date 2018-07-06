@@ -1,9 +1,17 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-gem 'nokogiri', '~> 1.4'
-gem 'ruby-hmac', '~> 0.3'
-gem 'test-unit'
+# added by ykominami@gmail.com
+git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
+# Specify your gem's dependencies in amazon-ecs.gemspec
+gemspec
+#
 
-group :dev do
-  gem 'rake'
-end
+# remove by ykominami@gmail.com
+#gem 'nokogiri', '~> 1.4'
+#gem 'ruby-hmac', '~> 0.3'
+#gem 'test-unit'
+
+#group :dev do
+#  gem 'rake'
+#end
+#
