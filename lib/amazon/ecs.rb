@@ -21,7 +21,7 @@
 # SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #++
 
-# added by ykominami@gmail.com
+# added by ykominami@gmail.com (this line must be used instead of class variable VERSION of class Ecs)
 #require "amazon/ecs/version"
 #
 
@@ -36,7 +36,7 @@ module Amazon
   class RequestError < StandardError; end
 
   class Ecs
-    VERSION = '2.5.0'
+#    VERSION = '2.5.0'
 
     SERVICE_URLS = {
         :us => 'http://webservices.amazon.com/onca/xml',
@@ -139,6 +139,8 @@ module Amazon
 
       # Include other required options
       opts[:timestamp] = Time.now.utc.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+      log("Request URL: #{opts}")
 
       request_url = prepare_url(opts)
       log("Request URL: #{request_url}")

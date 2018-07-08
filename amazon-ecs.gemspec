@@ -2,14 +2,14 @@
 # added by ykominami@gmail.com
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-#require "amazon/ecs/version"
+require "amazon/ecs/version"
 #require "amazon/ecs"
 #
 
 # removed by ykominami@gmail.com
 #$:.push File.expand_path("../lib", __FILE__)
 #
-require 'amazon/ecs'
+#require 'amazon/ecs'
 
 Gem::Specification.new do |gem|
   gem.name = %q{amazon-ecs}
