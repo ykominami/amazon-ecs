@@ -51,15 +51,15 @@ Gem::Specification.new do |gem|
       gem.add_runtime_dependency("nokogiri", "~> 1.4")
       gem.add_runtime_dependency("ruby-hmac", "~> 0.3")
 
-      gem.add_development_dependency "bundler", "~> 1.16"
-      gem.add_development_dependency "rake", "~> 10.0"
+      gem.add_development_dependency "bundler", "~> 2.2.0"
+      gem.add_development_dependency "rake", "~> 12.3.3"
       gem.add_development_dependency "rspec", "~> 3.0"
       gem.add_development_dependency "test-unit"
     else
       gem.add_dependency("nokogiri", "~> 1.4")
       gem.add_dependency("ruby-hmac", "~> 0.3")
       
-      gem.add_dependency "bundler", "~> 1.16"
+      gem.add_dependency "bundler", "~> 2.2.0"
       gem.add_dependency "rake", "~> 12.3.3"
       gem.add_dependency "rspec", "~> 3.0"
       gem.add_dependency "test-unit"
@@ -68,8 +68,8 @@ Gem::Specification.new do |gem|
     gem.add_dependency("nokogiri", "~> 1.4")
     gem.add_dependency("ruby-hmac", "~> 0.3")
 
-    gem.add_dependency "bundler", "~> 2.1.0"
-    gem.add_dependency "rake", "~> 10.0"
+    gem.add_dependency "bundler", "~> 2.2.0"
+    gem.add_dependency "rake", "~> 12.3.3"
     gem.add_dependency "rspec", "~> 3.0"
     gem.add_dependency "test-unit"
   end
